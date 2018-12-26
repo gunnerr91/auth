@@ -2,9 +2,9 @@ import React, { Component } from "react";
 import { View } from "react-native";
 import Header from "./components/shared/Header";
 import firebase from "@firebase/app";
-import "@firebase/auth";
-import "@firebase/database";
-import "@firebase/storage";
+// import "@firebase/auth";
+// import "@firebase/database";
+// import "@firebase/storage";
 import LoginForm from "./components/LoginForm";
 
 class App extends Component {
