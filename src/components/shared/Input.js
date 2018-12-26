@@ -6,9 +6,12 @@ const Input = props => {
     <View style={styles.container}>
       <Text style={styles.label}>{props.label}</Text>
       <TextInput
+        secureTextEntry={props.secureText}
+        placeholder={props.placeholder}
         value={props.value}
         onChangeText={props.onChangeHandler}
         style={styles.input}
+        autoCorrect={props.autoCorrect}
       />
     </View>
   );
@@ -21,7 +24,9 @@ const styles = {
     paddingLeft: 5,
     fontSize: 18,
     lineHeight: 23,
-    flex: 2
+    flex: 2,
+    height: 50,
+    textAlignVertical: "center"
   },
   label: {
     fontSize: 18,
